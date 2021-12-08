@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Functions</title>
+</head>
+
+<body>
+    <p id="open-console">Open console to see the results (Press Command + Option + J (Mac) or Control + Shift + J
+        (Windows, Linux, Chrome OS))</p>
+    <div class="code-snippet">
+        <code> <pre>
+//Sum of two numbers
+function sumOfTwo(num1, num2) {
+    return num1 + num2;
+}
+              
+console.log(sumOfTwo(4, 6));
+
+let result = sumOfTwo(5, 15);
+console.log(result);
+let newNum = 12;
+console.log(sumOfTwo(result, newNum));
+        </pre></code>
+    </div>
+
+    <div class="code-snippet">
+        <code> <pre>
+// Add and multiply
+function addMultiply(n1, n2, n3, n4) {
+    let sum1 = n1 + n2;
+    let sum2 = n3 + n4;
+    return sum1 * sum2;
+}
+              
+let result2 = addMultiply(2,3,4,5);
+console.log(result2);
+
+console.log(addMultiply(1,1,1,1));
+        </pre></code>
+    </div>
+
+    <div class="code-snippet">
+        <code> <pre>
+// Return larger
+function largerNum(num1, num2) {
+    if (num1 > num2) {
+        return num1;
+    }
+    else {
+        return num2;
+    }
+}
+
+console.log(largerNum(1, 2));              
+console.log(largerNum(44,33));  
+        </pre></code>
+    </div>
+
+    <div class="code-snippet">
+        <code> <pre>
+//Sum of elements
+function addNums(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+              
+let total = addNums([4, 7, 12, 11]);
+console.log(total);
+total = addNums([4, 5, 6, 7, 8, 9]);
+console.log(total);
+console.log(total - total);
+        </pre></code>
+    </div>
+
+    <div class="code-snippet">
+        <code> <pre>
+// Squaring a number
+function squareNum(num) {
+    return num * num;
+}
+
+console.log(squareNum(4));
+        </pre></code>
+    </div>
+
+    <div class="code-snippet">
+        <code> <pre>
+// Odd or Even
+function oddOrEven(num) {
+    if (num % 2 === 0) {
+        return num + " is an even number";
+    }
+    else {
+        return num + " is an odd number"
+    }
+}
+
+console.log(oddOrEven(6));
+console.log(oddOrEven(13));
+        </pre></code>
+    </div>
+
+    <div class="code-snippet">
+        <code> <pre>
+// Sum of positive
+function sumPositive(arr) {
+    let positive = [0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            positive.push(arr[i]);
+        }
+    }
+    return positive.reduce((num1, num2) => num1 + num2);
+}
+
+console.log(sumPositive([44, -2, 8, 19, -52, 110]))
+        </pre></code>
+    </div>
+
+    <script src="1.js"></script>
+    <script src="2.js"></script>
+    <script src="3.js"></script>
+    <script src="4.js"></script>
+    <script src="5.js"></script>
+    <script src="6.js"></script>
+    <script src="7.js"></script>
+</body>
+
+</html>
